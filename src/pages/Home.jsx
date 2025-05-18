@@ -19,6 +19,10 @@ export default function Home() {
                 <AD />
             </div>
             <Categories />
+
+
+
+
         </main>
     );
 }
