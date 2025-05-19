@@ -1,0 +1,131 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "Fresh Apple",
+      "category": "fruits",
+      "image": "https://images.unsplash.com/photo-1567306226416-28f0efdc88ce",
+      "description": "Crisp and juicy fresh apples.",
+      "price": 2.99,
+      "discount": 10,
+      "discountedPrice": 2.69
+    },
+    {
+      "id": 2,
+      "title": "Fresh Banana",
+      "category": "fruits",
+      "image": "https://images.unsplash.com/photo-1574226516831-e1dff420e8f8",
+      "description": "Sweet and ripe bananas.",
+      "price": 1.29,
+      "discount": 0,
+      "discountedPrice": null
+    },
+    {
+      "id": 3,
+      "title": "Fresh Carrot",
+      "category": "vegetables",
+      "image": "https://images.unsplash.com/photo-1601004890684-d8cbf643f5f2",
+      "description": "Crunchy and rich in Vitamin A.",
+      "price": 1.49,
+      "discount": 20,
+      "discountedPrice": 1.19
+    },
+    {
+      "id": 4,
+      "title": "Fresh Broccoli",
+      "category": "vegetables",
+      "image": "https://images.unsplash.com/photo-1584270354949-1a5fe67c27b1",
+      "description": "Fresh green broccoli florets.",
+      "price": 2.49,
+      "discount": 0,
+      "discountedPrice": null
+    },
+    {
+      "id": 5,
+      "title": "Fresh Tomato",
+      "category": "vegetables",
+      "image": "https://images.unsplash.com/photo-1582515073490-d6c08d3ffb9b",
+      "description": "Juicy organic tomatoes.",
+      "price": 1.99,
+      "discount": 10,
+      "discountedPrice": 1.79
+    },
+    {
+      "id": 6,
+      "title": "Fresh Strawberry",
+      "category": "fruits",
+      "image": "https://images.unsplash.com/photo-1587732059531-3f0f6f1c6a17",
+      "description": "Sweet red strawberries.",
+      "price": 3.99,
+      "discount": 20,
+      "discountedPrice": 3.19
+    },
+    {
+      "id": 7,
+      "title": "Fresh Pineapple",
+      "category": "fruits",
+      "image": "https://images.unsplash.com/photo-1582281298056-dcdb9f822e3b",
+      "description": "Tangy tropical pineapple.",
+      "price": 2.49,
+      "discount": 0,
+      "discountedPrice": null
+    },
+    {
+      "id": 8,
+      "title": "Fresh Spinach",
+      "category": "vegetables",
+      "image": "https://images.unsplash.com/photo-1606788075761-9ff6f06cbcf9",
+      "description": "Fresh leafy spinach.",
+      "price": 1.99,
+      "discount": 10,
+      "discountedPrice": 1.79
+    },
+    {
+      "id": 9,
+      "title": "Fresh Mango",
+      "category": "fruits",
+      "image": "https://images.unsplash.com/photo-1574224731951-8e0b9c2667c3",
+      "description": "Juicy and sweet tropical mango.",
+      "price": 3.49,
+      "discount": 15,
+      "discountedPrice": 2.96
+    },
+    {
+      "id": 10,
+      "title": "Fresh Lettuce",
+      "category": "vegetables",
+      "image": "https://images.unsplash.com/photo-1589927986089-35812386fa4f",
+      "description": "Crispy fresh lettuce leaves.",
+      "price": 1.59,
+      "discount": 0,
+      "discountedPrice": null
+    },
+    {
+      "id": 11,
+      "title": "Fresh Orange",
+      "category": "fruits",
+      "image": "https://images.unsplash.com/photo-1589927986089-35812386fa4f",
+      "description": "Tangy and refreshing oranges.",
+      "price": 2.49,
+      "discount": 10,
+      "discountedPrice": 2.24
+    },
+    {
+      "id": 12,
+      "title": "Fresh Cucumber",
+      "category": "vegetables",
+      "image": "https://images.unsplash.com/photo-1592928305085-48b3168c4baf",
+      "description": "Cool and crisp cucumbers.",
+      "price": 1.39,
+      "discount": 5,
+      "discountedPrice": 1.32
+    }
+  ],
+  "users":[
+    { 
+      "id":0,
+      "email":"sus@gmail.com",
+      "password":"1234"
+    }
+  ]
+}

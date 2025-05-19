@@ -17,20 +17,20 @@ export default function Footer() {
     };
 
     const sectionHeaders = [
-        { icon: <FiShoppingBag className="text-green-400" />, label: "About Us" },
-        { icon: <BsFillPinMapFill className="text-green-400" />, label: "Useful Links" },
-        { icon: <FaEnvelope className="text-green-400" />, label: "Become a Seller" }
+        { icon: <FiShoppingBag className="text-green-500" />, label: "About Us" },
+        { icon: <BsFillPinMapFill className="text-green-500" />, label: "Useful Links" },
+        { icon: <FaEnvelope className="text-green-500" />, label: "Become a Seller" }
     ];
 
     return (
-        <footer className="bg-[#0e1f33] text-white py-10 px-6">
+        <footer className="bg-gray-100 text-gray-800 dark:bg-[#0e1f33] dark:text-white py-10 px-6 transition-colors duration-300">
             {/* Newsletter */}
             <div className="mb-12">
-                <div className="bg-[#112b45] rounded-2xl px-6 py-8 shadow-xl max-w-4xl mx-auto flex flex-col sm:flex-row items-center justify-between space-y-4 sm:space-y-0 sm:space-x-6 border border-gray-700">
-                    <h2 className="text-white text-xl sm:text-2xl font-bold">
-                        Subscribe to <span className="text-green-400">Newsletter</span>
+                <div className="bg-white dark:bg-[#112b45] border border-gray-300 dark:border-gray-700 rounded-2xl px-6 py-8 shadow-xl max-w-4xl mx-auto flex flex-col sm:flex-row items-center justify-between space-y-4 sm:space-y-0 sm:space-x-6">
+                    <h2 className="text-xl sm:text-2xl font-bold dark:text-white">
+                        Subscribe to <span className="text-green-500">Newsletter</span>
                     </h2>
-                    <form className="flex w-full sm:w-auto items-center rounded-full overflow-hidden bg-white shadow-md">
+                    <form className="flex w-full sm:w-auto items-center rounded-full overflow-hidden bg-gray-200 dark:bg-white shadow-md">
                         <input
                             type="email"
                             placeholder="Enter your email …"
@@ -49,7 +49,7 @@ export default function Footer() {
             {/* Grid with cards */}
             <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
                 {sectionHeaders.map((header, index) => (
-                    <div key={index} className="bg-[#132b45]/80 rounded-2xl p-6 shadow-lg border border-gray-700 hover:-translate-y-1 hover:shadow-2xl transition-transform duration-300">
+                    <div key={index} className="bg-white dark:bg-[#132b45]/80 rounded-2xl p-6 shadow-lg border border-gray-300 dark:border-gray-700 hover:-translate-y-1 hover:shadow-2xl transition-transform duration-300">
                         <button
                             className="md:hidden w-full text-left text-lg font-semibold mb-4"
                             onClick={() => toggleCard(index)}
@@ -57,7 +57,7 @@ export default function Footer() {
                             <div className="flex items-center justify-between">
                                 <span className="flex items-center gap-2">
                                     {header.icon}
-                                    <span className="text-green-400">{header.label}</span>
+                                    <span className="text-green-500">{header.label}</span>
                                 </span>
                                 <span>{openCard === index ? '−' : '+'}</span>
                             </div>
@@ -77,43 +77,43 @@ export default function Footer() {
                                     {index === 0 && (
                                         <>
                                             <div className="hidden md:flex items-center space-x-3 mb-4">
-                                                <FiShoppingBag className="text-green-400 text-3xl" />
-                                                <h2 className="text-2xl font-bold text-green-400">
-                                                    HAMRO<span className="text-white">MART</span>
+                                                <FiShoppingBag className="text-green-500 text-3xl" />
+                                                <h2 className="text-2xl font-bold text-green-500">
+                                                    HAMRO<span className="text-gray-800 dark:text-white">MART</span>
                                                 </h2>
                                             </div>
-                                            <p className="text-sm text-gray-300 italic">
+                                            <p className="text-sm text-gray-600 dark:text-gray-300 italic">
                                                 “Be who you are and say what you feel, because those who mind don't matter, and those who matter don't mind.”
                                             </p>
                                             <div className="flex space-x-3 mt-5">
-                                                <a href="#" className="bg-gray-800 p-2 rounded-full hover:scale-110 transition transform duration-300 animate-bounce delay-100"><FaFacebookF /></a>
-                                                <a href="#" className="bg-gray-800 p-2 rounded-full hover:scale-110 transition transform duration-300 animate-bounce delay-200"><FaTwitter /></a>
-                                                <a href="#" className="bg-gray-800 p-2 rounded-full hover:scale-110 transition transform duration-300 animate-bounce delay-300"><FaInstagram /></a>
+                                                <a href="#" className="bg-gray-200 dark:bg-gray-800 p-2 rounded-full hover:scale-110 transition transform duration-300 animate-bounce delay-100"><FaFacebookF /></a>
+                                                <a href="#" className="bg-gray-200 dark:bg-gray-800 p-2 rounded-full hover:scale-110 transition transform duration-300 animate-bounce delay-200"><FaTwitter /></a>
+                                                <a href="#" className="bg-gray-200 dark:bg-gray-800 p-2 rounded-full hover:scale-110 transition transform duration-300 animate-bounce delay-300"><FaInstagram /></a>
                                             </div>
                                         </>
                                     )}
 
                                     {index === 1 && (
                                         <>
-                                            <h3 className="text-xl font-semibold mb-4 border-b border-gray-600 w-fit pb-1 hidden md:block">Useful Links</h3>
-                                            <ul className="space-y-3 text-sm text-gray-300">
-                                                <li className="flex items-center gap-2"><BsFillPinMapFill className="text-green-400" /> Help Center</li>
-                                                <li className="flex items-center gap-2"><BsFillPinMapFill className="text-green-400" /> Terms & Conditions</li>
-                                                <li className="flex items-center gap-2"><BsFillPinMapFill className="text-green-400" /> Privacy Policy</li>
-                                                <li className="flex items-center gap-2"><BsFillPinMapFill className="text-green-400" /> Refund Policy</li>
-                                                <li className="flex items-center gap-2"><FaPhoneAlt className="text-green-400" /> +977 9814149723</li>
-                                                <li className="flex items-center gap-2"><FaEnvelope className="text-green-400" /> info@hamromart.com</li>
+                                            <h3 className="text-xl font-semibold mb-4 border-b border-gray-400 dark:border-gray-600 w-fit pb-1 hidden md:block">Useful Links</h3>
+                                            <ul className="space-y-3 text-sm text-gray-600 dark:text-gray-300">
+                                                <li className="flex items-center gap-2"><BsFillPinMapFill className="text-green-500" /> Help Center</li>
+                                                <li className="flex items-center gap-2"><BsFillPinMapFill className="text-green-500" /> Terms & Conditions</li>
+                                                <li className="flex items-center gap-2"><BsFillPinMapFill className="text-green-500" /> Privacy Policy</li>
+                                                <li className="flex items-center gap-2"><BsFillPinMapFill className="text-green-500" /> Refund Policy</li>
+                                                <li className="flex items-center gap-2"><FaPhoneAlt className="text-green-500" /> +977 9814149723</li>
+                                                <li className="flex items-center gap-2"><FaEnvelope className="text-green-500" /> info@hamromart.com</li>
                                             </ul>
                                         </>
                                     )}
 
                                     {index === 2 && (
                                         <>
-                                            <h3 className="text-xl font-semibold text-white mb-2 hidden md:block">
+                                            <h3 className="text-xl font-semibold mb-2 hidden md:block text-gray-800 dark:text-white">
                                                 Interested in a Great Way<br />
-                                                <span className="text-green-400">Make Money?</span>
+                                                <span className="text-green-500">Make Money?</span>
                                             </h3>
-                                            <p className="text-sm text-gray-300 mb-5">
+                                            <p className="text-sm text-gray-600 dark:text-gray-300 mb-5">
                                                 A supermarket is a self-service shop offering a wide variety of food, beverages and household products.
                                             </p>
                                             <button className="bg-green-500 hover:bg-green-600 text-white font-semibold px-5 py-2 rounded-full transition">
@@ -129,8 +129,8 @@ export default function Footer() {
             </div>
 
             {/* Bottom Bar */}
-            <div className="mt-12 border-t border-gray-700 pt-6 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400 max-w-7xl mx-auto">
-                <p>Made with ❤️ by hamrotheme. Copyright © 2025 Hamro Theme.</p>
+            <div className="mt-12 border-t border-gray-300 dark:border-gray-700 pt-6 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500 dark:text-gray-400 max-w-7xl mx-auto">
+                <p>Made with ❤️ by hamrotheme. Copyri   ght © 2025 Hamro Theme.</p>
                 <div className="flex space-x-4 mt-4 md:mt-0">
                     <img src="https://xtratheme.com/elementor/supermarket/wp-content/uploads/sites/106/2023/05/22.png" alt="Visa Electron" className="h-6" />
                 </div>

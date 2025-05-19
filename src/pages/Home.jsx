@@ -3,7 +3,8 @@ import Hero from '../components/Home/Hero';
 import Features from '../components/Home/Features';
 import AD from '../components/Home/AD';
 import Categories from '../components/Home/Categories';
-
+import Products from './Products';
+import Footer from './Footer';
 export default function Home() {
     return (
         <main className="w-full relative overflow-hidden dark:bg-gray-900">
@@ -18,7 +19,7 @@ export default function Home() {
             <div className="-mt-12 relative z-10">
                 <AD />
             </div>
-            <Categories />
+
 
 
 
